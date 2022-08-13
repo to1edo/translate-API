@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <title>Traductor</title>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Traductor</h1>
+        <div class="selectsContainer">
+            <div class="selectLanguage">
+                <label for="translateFrom">Traducir del: </label>
+                <select name="inputLanguage" id="translateFrom">
+                    <option value="" disabled selected>--seleccione---</option>
+                </select>
+            </div>
+        
+            <div class="selectLanguage">
+                <label for="translateTo">al: </label>
+                <select name="inputLanguage" id="translateTo">
+                    <option value="" disabled selected>--seleccione---</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="inputsText">
+    
+            <div class="textarea">
+                <label for="inputTex">Texto original</label>
+                <textarea id="inputText" cols="30" rows="10"></textarea>
+            </div>
+    
+            <input type="submit" id="translate" value="Traducir">
+    
+            <div class="textarea">
+                <label for="outputTex">Texto traducido</label>
+                <textarea id="outputText" cols="30" rows="10"></textarea>
+            </div>
+            
+        </div>
+    
+    </main>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
